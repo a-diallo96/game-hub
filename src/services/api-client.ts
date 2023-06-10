@@ -1,3 +1,4 @@
+import { CanceledError } from "axios";
 import axios from "axios";
 
 export default axios.create({
@@ -6,3 +7,5 @@ export default axios.create({
         key: 'dde626b0208247c89d071bc4117c076e'
     }
 })  
+
+export {CanceledError}
