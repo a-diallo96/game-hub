@@ -6,7 +6,6 @@ export const GameGrid = () => {
   const { games, error } = useGame();
   return (
     <>
-      <h1>Game list </h1>
       {error && <div>{error}</div>}
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 5 }} spacing={10}>
         {games.map((game) => (
